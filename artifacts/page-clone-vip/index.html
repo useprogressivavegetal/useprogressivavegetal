@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>Progressiva Vegetal Havana | Cabelo Liso Sem Sair de Casa</title>
+    <meta name="description" content="Alise seu cabelo em casa com resultado de salão. Progressiva Vegetal Havana sem formol, sem chapinha. Frete grátis e 90 dias de garantia." />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '1977031942900826');
+      var _pvEventId = 'pv_' + Date.now() + '_' + Math.random().toString(36).substr(2,9);
+      window._metaEventId = _pvEventId;
+      fbq('track', 'PageView', {}, { eventID: _pvEventId });
+      window.addEventListener('load', function () {
+        try {
+          fetch('/api/meta/page-view', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            keepalive: true,
+            body: JSON.stringify({
+              eventId: _pvEventId,
+              sourceUrl: window.location.href,
+              fbp: (document.cookie.match(/(?:^|; )_fbp=([^;]+)/) || [])[1] || null,
+              fbc: (document.cookie.match(/(?:^|; )_fbc=([^;]+)/) || [])[1] || null
+            })
+          });
+        } catch (e) {}
+      });
+    </script>
+    <script type="module" crossorigin src="/assets/index-BZN1rfqq.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DASmpSdn.css" />
+  </head>
+  <body>
+    <noscript>
+      <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1977031942900826&ev=PageView&noscript=1" />
+    </noscript>
+    <div id="root"></div>
+    <script src="https://replit-cdn.com/replit-pill/replit-pill.global.js" data-referral-code="qp1iyvzsdshb" data-repl-id="fd3bf623-ca0d-4063-96f2-005207594b2f"></script>
+  </body>
+</html>

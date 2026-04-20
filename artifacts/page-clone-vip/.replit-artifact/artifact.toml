@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Page Clone VIP"
+version = "1.0.0"
+id = "artifacts/page-clone-vip"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 25871
+
+[services.development]
+run = "pnpm --filter @workspace/page-clone-vip run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/page-clone-vip", "run", "build" ]
+publicDir = "artifacts/page-clone-vip/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "25871"
+BASE_PATH = "/"
